@@ -1,0 +1,53 @@
+/* {
+outline: 1px dotted #ff0000;
+} */
+html, body {
+overflow-x: hidden;
+}
+body {
+  font-size: 100%;
+}
+h1, h2, h3, h4 {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+h1, h2, h3, h4 {
+  line-height: 1.2em;
+}
+p {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: ms(4);
+  line-height: 1.4em;
+}
+.container {
+  width: 100%;
+}
+// Main 
+main {
+  visibility: hidden;
+}
+header {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: ms(6);
+    text-transform: lowercase;
+    letter-spacing: 2px;
+    color: $color2;
+  }
+  p {
+    margin-top: 30px;
+    font-size: ms(3);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: $color1;
+  }
+}
