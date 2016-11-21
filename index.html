@@ -5,24 +5,109 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="Description" content="GPiQ Automated Clinical Intelligence">
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style-min.css"/>
 </head>
 <body>
   <!-- Main -->
   <main id="home">
-    <header>
-      <img src="images/logo.png" alt="logo" />
-      <h1><span>Automated</span> <span>Clinical</span> <span>Intelligence</span></h1>
-      <p>Coming Soon <span>.</span><span>.</span><span>.</span></p>
-    </header>
+    <div class="main__gradient">
+      <div class="main__content">
+        <img src="images/logo_crop.png" alt="logo" />
+        <h1><span>Automated</span> <span>Clinical</span> <span>Intelligence</span></h1>
+        <p>CLINICAL DECISION SUPPORT <span>+</span> CLINICAL AUDIT <span>PORTAL</span> for GPs</p>
+        <a href="mailto:gaveen@gpiq.com.au?subject=Interest%20in%20GPiQ&body=Please%20keep%20me%20updated%20with%20the%20latest%20GPiQ%20developments." class="call-to-action">Register your interest here</a>
+        <div class="main__social">
+          <a href="#"><img src="images/facebook.svg" alt="facebook" target="_blank" /></a>
+          <a href="#"><img src="images/linkedin.svg" alt="linkedin" target="_blank" /></a>
+        </div>
+      </div>
+    </div>
   </main>
-  <!-- Javascript -->
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="bower_components/gsap/src/minified/TweenMax.min.js"></script>
-  <script src="bower_components/scrollmagic/scrollmagic/minified/ScrollMagic.min.js"></script>
-  <script src="bower_components/scrollmagic/scrollmagic/minified/plugins/jquery.ScrollMagic.min.js"></script>
-  <script src="bower_components/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
-  <script src="scripts/min/gpiq_script-min.js"></script>
-</body>
-</body>
-</html>
+  <!-- About -->
+  <section class="top" id="about">
+    <article>
+      <h1>Clinical decision support.</h1>
+      <p>At the point-of-care when you need it most.</p>
+      <p>Build and improve GP knowledge.</p>
+      <p>Using technology as an enabler.</p>
+    </article>
+  </section>
+  <section class="middle">
+    <article>
+      <h1>Clinical audit.</h1>
+      <p>Compare your practice to evidence-based guidelines.</p>
+      <p>Perform efficient clinical audits.</p>
+      <p>Drive continuous quality improvement.</p>
+    </article>
+  </section>
+  <section class="middle2">
+    <article>
+      <div class="container">
+        <div class="row is-table-row">
+          <div class="col-md-6 left">
+            <h2>Australian <br>first</h2>
+            <img src="images/world.svg" alt="world" />
+          </div>
+          <div class="col-md-6 right">
+            <h2>All devices supported</h2>
+            <img src="images/responsive.svg" alt="responsive" />
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+  <section class="bottom">
+    <article>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2>Join to foster a culture of ...</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <h1>Leadership.</h1>
+          </div>
+          <div class="col-md-4">
+            <h1>Excellence.</h1>
+          </div>
+          <div class="col-md-4">
+            <h1>Innovation.</h1>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+  <footer id="contact">
+    <!-- Contact form -->
+    <div class="contact__form">
+      <h1>Contact.</h1>
+      <form action="mail.php" method="post" autocomplete="off">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Bob Smith" autocomplete="off" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="bob.smith@gmail.com" autocomplete="off" required>
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" id="message" name="message" placeholder="Enter a message..." rows="6" autocomplete="off" required></textarea>
+        </div>
+        <div><button type="submit" value="send" class="btn">Submit</button></div>
+        <div id="confirmation"><p>Message sent!</p></div>
+      </form>
+    </div>
+    <div class="copyright">
+      <p>GPiQ &copy; 2016 All Rights Reserved<p>
+    </div>
+  </footer>
+    <!-- Javascript -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/gsap/src/minified/TweenMax.min.js"></script>
+    <script src="bower_components/scrollmagic/scrollmagic/minified/ScrollMagic.min.js"></script>
+    <script src="bower_components/scrollmagic/scrollmagic/minified/plugins/jquery.ScrollMagic.min.js"></script>
+    <script src="bower_components/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+    <script src="scripts/min/gpiq_script-min.js"></script>
+  </body>
+  </html>
