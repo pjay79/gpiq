@@ -5540,10 +5540,11 @@ main {
   background-color: rgba(255, 255, 255, 0.8); }
 
 .main__social {
-  padding-top: 40px; }
+  position: relative;
+  top: 40px; }
 
 .main__social img {
-  padding: 0 20px; }
+  padding: 0 10px; }
 
 .main__content {
   visibility: hidden;
@@ -5586,24 +5587,20 @@ main {
   text-decoration: none;
   letter-spacing: 2px;
   margin: 10px 0 0 0;
-  padding: 10px 50px; }
+  padding: 10px 50px;
+  -webkit-transition: all 0.45s ease;
+  -moz-transition: all 0.45s ease;
+  transition: all 0.45s ease; }
 
 .main__content .call-to-action:hover {
-  cursor: pointer; }
-
-@media (min-width: 62em) {
-  .is-table-row {
-    display: table; }
-  .is-table-row [class*="col-"] {
-    float: none;
-    display: table-cell;
-    vertical-align: top; } }
+  cursor: pointer;
+  background-color: rgba(45, 147, 232, 0.7); }
 
 section {
   text-align: center; }
 
 section article {
-  padding: 150px 0; }
+  padding: 125px 0; }
 
 section article h1 {
   display: inline-block;
@@ -5635,8 +5632,18 @@ section article p {
   color: #FFF; }
 
 .middle article {
+  position: relative;
   background-color: #FFF;
   background: url(images/sos.png) repeat; }
+
+.middle article img {
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); }
 
 .middle h1 {
   color: #2D93E8; }
@@ -5645,24 +5652,26 @@ section article p {
   color: #4C4C4C; }
 
 .middle2 article {
-  padding: 0; }
+  padding: 0;
+  background-color: #4C4C4C; }
 
 .middle2 article img {
   display: block;
   margin: 0 auto; }
 
 .middle2 article .left {
-  padding: 20vh;
+  padding: 150px;
   background-color: #2D93E8; }
 
 .middle2 article .right {
-  padding: 20vh;
+  padding: 150px;
   background-color: #4C4C4C; }
 
 .middle2 h1 {
   color: #2D93E8; }
 
 .middle2 h2 {
+  margin-top: 0;
   margin-bottom: 75px;
   font-size: 2.98598em;
   font-weight: bold;
@@ -5682,14 +5691,13 @@ section article p {
 
 .bottom article {
   padding: 150px 0;
-  background-color: rgba(45, 147, 232, 0.9); }
+  background-color: rgba(255, 255, 255, 0.9); }
 
 .bottom h1 {
   padding-bottom: 10px;
   font-size: 5.15978em;
   font-weight: bold;
-  color: #FFF;
-  border-bottom: 8px solid #FFF; }
+  color: #2D93E8; }
 
 .bottom h2 {
   margin-bottom: 75px;
@@ -5697,7 +5705,7 @@ section article p {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 4px;
-  color: #FFF; }
+  color: #2D93E8; }
 
 footer {
   text-align: center; }

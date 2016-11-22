@@ -3795,6 +3795,16 @@
 		"oAP": "\/fonts\/GreycliffCF-RegularOblique.woff2",
 		"oF": 0
 		},
+	"\/images\/australian.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/australian.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/images\/bp.jpg": {
 		"ft": 16384,
 		"iS": 1624044,
@@ -3869,16 +3879,6 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/images\/facebook.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/images\/facebook.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
 	"\/images\/hero@1x.jpg": {
 		"ft": 16384,
 		"iS": 117589,
@@ -3902,16 +3902,6 @@
 		"oAP": "\/images\/hero@3x.jpg",
 		"oF": 0,
 		"opt": 0
-		},
-	"\/images\/linkedin.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/images\/linkedin.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
 		},
 	"\/images\/logo.png": {
 		"ft": 32768,

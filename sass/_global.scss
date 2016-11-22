@@ -70,9 +70,10 @@ main {
   background-color: rgba($white, 0.8);
 }
 .main__social {
-  padding-top: 40px;
+  position: relative;
+  top: 40px;
   img {
-    padding: 0 20px;
+    padding: 0 10px;
   }
 }
 .main__content {
@@ -107,7 +108,6 @@ main {
     display: inline-block;
     margin: 0 auto;
     border-radius: 0;
-    //border: 1px solid transparent;
     background-color: $color1;
     color: $white;
     font-size: ms(3);
@@ -116,28 +116,20 @@ main {
     letter-spacing: 2px;
     margin: 10px 0 0 0;
     padding: 10px 50px;
+    -webkit-transition: all 0.45s ease;
+    -moz-transition: all 0.45s ease;
+    transition: all 0.45s ease;
     &:hover {
-      //border: 1px solid $white;
       cursor: pointer;
-      //transition: background .5s;
+      background-color: rgba($color1, 0.7);
       }
     }
 }
 // Section 1
-@include media('>=desktop') {
-  .is-table-row {
-      display: table;
-  }
-  .is-table-row [class*="col-"] {
-      float: none;
-      display: table-cell;
-      vertical-align: top;
-  }
-}
 section {
   text-align: center;
   article {
-    padding: 150px 0;
+    padding: 125px 0;
     h1 {
       display: inline-block;
       margin-bottom: 25px;
@@ -155,12 +147,10 @@ section {
 }
 .top {
   @include cover-background('bp@1x.jpg');
-  //background-color: $color2;
   article {
     background-color: rgba($color2, 0.9);
   }
   h1 {
-    //border-bottom: 7px solid $color1;
     color: $color1;
   }
   p {
@@ -168,14 +158,22 @@ section {
   }
 }
 .middle {
-  //@include cover-background('pills.jpeg');
   article {
-    //background-color: rgba($white, 0.9);
+    position: relative;
     background-color: $white;
     background: url(images/sos.png) repeat;
+    img {
+      display: block;
+      margin: 0 auto;
+      position: absolute;;
+      //top: -25px;
+      top: 0%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+    }
   }
   h1 {
-    //border-bottom: 7px solid $color1;
     color: $color1;
   }
   p {
@@ -185,16 +183,17 @@ section {
 .middle2 {
   article {
     padding: 0;
+    background-color: $color2;
     img {
       display: block;
       margin: 0 auto;
     }
     .left {
-      padding: 20vh;
+      padding: 150px;
       background-color: $color1;
     }
     .right {
-      padding: 20vh;
+      padding: 150px;
       background-color: $color2;
     }
   }
@@ -202,6 +201,7 @@ section {
     color: $color1;
   }
   h2 {
+    margin-top: 0;
     margin-bottom: 75px;
     font-size: ms(6);
     font-weight: bold;
@@ -215,17 +215,15 @@ section {
 }
 .bottom {
   @include cover-background('bsl@1x.jpg');
-  //background-color: $color1;
   article {
     padding: 150px 0;
-    background-color: rgba($color1, 0.9);
+    background-color: rgba($white, 0.9);
   }
   h1 {
     padding-bottom: 10px;
     font-size: ms(9);
     font-weight: bold;
-    color: $white;
-    border-bottom: 8px solid $white;
+    color: $color1;
   }
   h2 {
     margin-bottom: 75px;
@@ -233,13 +231,11 @@ section {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 4px;
-    color: $white;
+    color: $color1;
   }
 }
 // Footer
 footer {
-  //background-color: $color2;
-  //@include cover-background('pills.jpeg');
   text-align: center;
   h1 {
     font-size: ms(10);
@@ -331,7 +327,6 @@ input:-webkit-autofill {
   padding: 10px 50px;
   border-radius: 0;
   margin: 0 auto;
-  //border: 1px solid $color1;
   background-color: $color1;
   color: $white;
   font-size: ms(4);
