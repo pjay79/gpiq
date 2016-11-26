@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "25444",
 "files": {
+	"\/bower.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/bower-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"\/bower_components\/bootstrap-sass\/.bower.json": {
 		"ft": 524288,
 		"oA": 2,
@@ -193,7 +201,7 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/bower_components\/bootstrap-sass\/assets\/stylesheets\/_bootstrap-compass.scss",
 		"oF": 0,
 		"oS": 3,
@@ -206,7 +214,7 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/bower_components\/bootstrap-sass\/assets\/stylesheets\/_bootstrap-mincer.scss",
 		"oF": 0,
 		"oS": 3,
@@ -219,7 +227,7 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/bower_components\/bootstrap-sass\/assets\/stylesheets\/_bootstrap-sprockets.scss",
 		"oF": 0,
 		"oS": 3,
@@ -674,7 +682,7 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/bower_components\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/_theme.scss",
 		"oF": 0,
 		"oS": 3,
@@ -1666,6 +1674,222 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/bower_components\/ie-alert\/.bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/bower_components\/ie-alert\/.bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/bower_components\/ie-alert\/bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/bower_components\/ie-alert\/bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/bower_components\/ie-alert\/README.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/bower_components\/ie-alert\/README.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/bower_components\/ie-alert\/theplugin\/iealert.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/ie-alert\/theplugin\/iealert.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/ie-alert\/theplugin\/iealert.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/ie-alert\/theplugin\/iealert.min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/ie-alert\/theplugin\/iealert\/6_bottom.png": {
+		"ft": 32768,
+		"iS": 205,
+		"oA": 2,
+		"oAP": "\/bower_components\/ie-alert\/theplugin\/iealert\/6_bottom.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/ie-alert\/theplugin\/iealert\/6_l_b_c.png": {
+		"ft": 32768,
+		"iS": 773,
+		"oA": 2,
+		"oAP": "\/bower_components\/ie-alert\/theplugin\/iealert\/6_l_b_c.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/ie-alert\/theplugin\/iealert\/6_l_t_c.png": {
+		"ft": 32768,
+		"iS": 699,
+		"oA": 2,
+		"oAP": "\/bower_components\/ie-alert\/theplugin\/iealert\/6_l_t_c.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/ie-alert\/theplugin\/iealert\/6_left.png": {
+		"ft": 32768,
+		"iS": 198,
+		"oA": 2,
+		"oAP": "\/bower_components\/ie-alert\/theplugin\/iealert\/6_left.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/ie-alert\/theplugin\/iealert\/6_r_b_c.png": {
+		"ft": 32768,
+		"iS": 753,
+		"oA": 2,
+		"oAP": "\/bower_components\/ie-alert\/theplugin\/iealert\/6_r_b_c.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/ie-alert\/theplugin\/iealert\/6_r_t_c.png": {
+		"ft": 32768,
+		"iS": 910,
+		"oA": 2,
+		"oAP": "\/bower_components\/ie-alert\/theplugin\/iealert\/6_r_t_c.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/ie-alert\/theplugin\/iealert\/6_r_t_c_h.png": {
+		"ft": 32768,
+		"iS": 976,
+		"oA": 2,
+		"oAP": "\/bower_components\/ie-alert\/theplugin\/iealert\/6_r_t_c_h.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/ie-alert\/theplugin\/iealert\/6_right.png": {
+		"ft": 32768,
+		"iS": 192,
+		"oA": 2,
+		"oAP": "\/bower_components\/ie-alert\/theplugin\/iealert\/6_right.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/ie-alert\/theplugin\/iealert\/6_top.png": {
+		"ft": 32768,
+		"iS": 202,
+		"oA": 2,
+		"oAP": "\/bower_components\/ie-alert\/theplugin\/iealert\/6_top.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/ie-alert\/theplugin\/iealert\/bg.png": {
+		"ft": 32768,
+		"iS": 93,
+		"oA": 2,
+		"oAP": "\/bower_components\/ie-alert\/theplugin\/iealert\/bg.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/ie-alert\/theplugin\/iealert\/bottom.png": {
+		"ft": 32768,
+		"iS": 162,
+		"oA": 2,
+		"oAP": "\/bower_components\/ie-alert\/theplugin\/iealert\/bottom.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/ie-alert\/theplugin\/iealert\/iesprites.png": {
+		"ft": 32768,
+		"iS": 2658,
+		"oA": 2,
+		"oAP": "\/bower_components\/ie-alert\/theplugin\/iealert\/iesprites.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/ie-alert\/theplugin\/iealert\/left.png": {
+		"ft": 32768,
+		"iS": 147,
+		"oA": 2,
+		"oAP": "\/bower_components\/ie-alert\/theplugin\/iealert\/left.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/ie-alert\/theplugin\/iealert\/right.png": {
+		"ft": 32768,
+		"iS": 147,
+		"oA": 2,
+		"oAP": "\/bower_components\/ie-alert\/theplugin\/iealert\/right.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/ie-alert\/theplugin\/iealert\/style.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/ie-alert\/theplugin\/iealert\/style.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/ie-alert\/theplugin\/iealert\/style_dev.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/ie-alert\/theplugin\/iealert\/style_dev.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/ie-alert\/theplugin\/iealert\/top.png": {
+		"ft": 32768,
+		"iS": 154,
+		"oA": 2,
+		"oAP": "\/bower_components\/ie-alert\/theplugin\/iealert\/top.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/ie-alert\/theplugin\/iealert\/u-center.png": {
+		"ft": 32768,
+		"iS": 286,
+		"oA": 2,
+		"oAP": "\/bower_components\/ie-alert\/theplugin\/iealert\/u-center.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/ie-alert\/theplugin\/iealert\/u-left.png": {
+		"ft": 32768,
+		"iS": 522,
+		"oA": 2,
+		"oAP": "\/bower_components\/ie-alert\/theplugin\/iealert\/u-left.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/ie-alert\/theplugin\/iealert\/u-right.png": {
+		"ft": 32768,
+		"iS": 559,
+		"oA": 2,
+		"oAP": "\/bower_components\/ie-alert\/theplugin\/iealert\/u-right.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/bower_components\/include-media\/.bower.json": {
 		"ft": 524288,
 		"oA": 2,
@@ -1805,7 +2029,7 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/bower_components\/include-media\/src\/_config.scss",
 		"oF": 0,
 		"oS": 3,
@@ -1818,7 +2042,7 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/bower_components\/include-media\/src\/_media.scss",
 		"oF": 0,
 		"oS": 3,
@@ -1831,7 +2055,7 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/bower_components\/include-media\/src\/helpers\/_logger.scss",
 		"oF": 0,
 		"oS": 3,
@@ -1844,7 +2068,7 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/bower_components\/include-media\/src\/helpers\/_no-media.scss",
 		"oF": 0,
 		"oS": 3,
@@ -1857,7 +2081,7 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/bower_components\/include-media\/src\/helpers\/_parser.scss",
 		"oF": 0,
 		"oS": 3,
@@ -1870,7 +2094,7 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/bower_components\/include-media\/src\/helpers\/_slice.scss",
 		"oF": 0,
 		"oS": 3,
@@ -1883,7 +2107,7 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/bower_components\/include-media\/src\/helpers\/_to-number.scss",
 		"oF": 0,
 		"oS": 3,
@@ -1896,7 +2120,7 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/bower_components\/include-media\/src\/plugins\/_tweakpoints.scss",
 		"oF": 0,
 		"oS": 3,
@@ -2604,7 +2828,7 @@
 	"\/bower_components\/jquery\/src\/manipulation\/_evalUrl.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/bower_components\/jquery\/src\/manipulation\/_evalUrl.js",
 		"oF": 0,
 		"sC": 1,
@@ -3078,7 +3302,7 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/bower_components\/modular-scale\/stylesheets\/_modular-scale-tests.scss",
 		"oF": 0,
 		"oS": 3,
@@ -3869,11 +4093,31 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/images\/doctor-stethoscope.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/doctor-stethoscope.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/images\/e-mail-envelope.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/images\/e-mail-envelope.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/images\/facebook.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/facebook.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -3903,6 +4147,16 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/images\/linkedin.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/linkedin.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/images\/logo.png": {
 		"ft": 32768,
 		"iS": 24677,
@@ -3926,6 +4180,14 @@
 		"oAP": "\/images\/logo_crop2.png",
 		"oF": 0,
 		"opt": 0
+		},
+	"\/images\/logo_crop_small.png": {
+		"ft": 32768,
+		"iS": 8186,
+		"oA": 0,
+		"oAP": "\/images\/logo_crop_small.png",
+		"oF": 0,
+		"opt": 1
 		},
 	"\/images\/logo_white.png": {
 		"ft": 32768,

@@ -12,76 +12,92 @@
   <main id="home">
     <div class="main__gradient">
       <div class="main__content">
-        <img src="images/logo_crop.png" alt="logo" />
+        <img src="images/logo_crop_small.png" alt="logo"/>
         <h1><span>Automated</span> <span>Clinical</span> <span>Intelligence</span></h1>
-        <p>CLINICAL DECISION SUPPORT <span>+</span> CLINICAL AUDIT <span>PORTAL</span> for GPs</p>
-        <a href="mailto:gaveen@gpiq.com.au?subject=Interest%20in%20GPiQ&body=Please%20keep%20me%20updated%20with%20the%20latest%20GPiQ%20developments." class="call-to-action">Register your interest here</a>
+        <p>CLINICAL DECISION SUPPORT <span class="line-break"><span class="highlight">+</span> CLINICAL AUDIT <span class="highlight">PORTAL</span> FOR GPs</span></p>
+        <a href="mailto:gaveen@gpiq.com.au?subject=Interest%20in%20GPiQ&body=Please%20keep%20me%20updated%20with%20the%20latest%20GPiQ%20developments." class="call-to-action">Register interest here</a>
         <div class="main__social">
-          <a href="#"><img src="images/facebook.svg" alt="facebook" target="_blank" /></a><a href="#"><img src="images/linkedin.svg" alt="linkedin" target="_blank" /></a>
+          <a href="http://www.facebook.com" target="_blank"><img src="images/facebook.svg" alt="facebook"/></a><a href="http://www.linkedin.com" target="_blank"><img src="images/linkedin.svg" alt="linkedin"/></a>
         </div>
       </div>
     </div>
   </main>
   <!-- About -->
-  <section class="top" id="about">
+  <section class="one" id="about">
     <article>
-      <h1>Clinical decision support.</h1>
-      <p>At the point-of-care when you need it most.</p>
-      <p>Build and improve GP knowledge.</p>
-      <p>Using technology as an enabler.</p>
+      <h1>Clinical decision support</h1>
+      <p>At the point-of-care</p>
+      <p>Build and improve GP knowledge</p>
+      <p>Using technology as an enabler</p>
     </article>
   </section>
-  <section class="middle">
+  <section class="two">
     <article>
-      <img src="images/plus.svg" alt="plus" />
-      <h1>Clinical audit.</h1>
-      <p>Compare your practice to evidence-based guidelines.</p>
-      <p>Perform efficient clinical audits.</p>
-      <p>Drive continuous quality improvement.</p>
+      <!-- <img src="images/plus.svg" alt="plus" />-->
+      <h1>Clinical audit</h1>
+      <p>Using evidence-based guidelines</p>
+      <p>Perform efficient clinical audits</p>
+      <p>Drive continuous quality improvement</p>
     </article>
   </section>
-  <section class="middle2">
+  <section class="three">
     <article>
       <div class="container">
         <div class="row">
           <div class="col-md-6 left">
-            <h2>Australian first.</h2>
+            <h3>Australian first</h3>
             <img src="images/australian.svg" alt="australian" />
           </div>
           <div class="col-md-6 right">
-            <h2>Any device.</h2>
+            <h3>Any device</h3>
             <img src="images/responsive.svg" alt="responsive" />
           </div>
         </div>
       </div>
     </article>
   </section>
-  <section class="bottom">
+  <section class="four">
     <article>
       <div class="container">
         <div class="row">
-          <div class="col-xs-12">
-            <h2>Join to foster a culture of ...</h2>
-          </div>
-        </div>
-        <div class="row">
           <div class="col-md-4">
-            <h1>Leadership.</h1>
+            <img src="images/doctor-stethoscope.svg" alt="doctor-stethoscope" />
           </div>
-          <div class="col-md-4">
-            <h1>Excellence.</h1>
-          </div>
-          <div class="col-md-4">
-            <h1>Innovation.</h1>
+          <div class="col-md-8">
+            <h3>Founded & developed by<br>DOCTORS for DOCTORS</h3>
+            <h3>Using world-leading artificial intelligence technology</h3>
           </div>
         </div>
       </div>
     </article>
   </section>
+  <!-- Extra section
+  <section class="five">
+    <article>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h1>JOIN to foster a culture of ...</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <h2>Leadership.</h2>
+          </div>
+          <div class="col-md-4">
+            <h2>Excellence.</h2>
+          </div>
+          <div class="col-md-4">
+            <h2>Innovation.</h2>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section> -->
   <footer id="contact">
     <!-- Contact form -->
     <div class="contact__form">
-      <h1>Contact.</h1>
+      <h1>Contact</h1>
       <form action="mail.php" method="post" autocomplete="off">
         <div class="form-group">
           <label for="name">Name:</label>
@@ -92,17 +108,19 @@
           <input type="email" class="form-control" id="email" name="email" placeholder="bob.smith@gmail.com" autocomplete="off" required>
         </div>
         <div class="form-group">
-          <textarea class="form-control" id="message" name="message" placeholder="Enter a message..." rows="6" autocomplete="off" required></textarea>
+          <textarea class="form-control" id="message" name="message" placeholder="Enter a message..." autocomplete="off" required></textarea>
         </div>
         <div><button type="submit" value="send" class="btn">Submit</button></div>
         <div id="confirmation"><p>Message sent!</p></div>
       </form>
     </div>
     <div class="copyright">
-      <p>GPiQ &copy; 2016 All Rights Reserved<p>
+      <p>GPiQ &copy; 2016 All Rights Reserved.<p>
+      <p>Icons designed by<br><a href="http://www.flaticon.com/authors/dave-gandy" target="_blank">Font Awesome</a> & <a href="http://www.flaticon.com/authors/freepik" target="_blank">Freekpik</a> from Flaticon.</a></p>
     </div>
   </footer>
     <!-- Javascript -->
+    <script src="bower_components/ie-alert/theplugin/iealert/iealert.min.js"></script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/gsap/src/minified/TweenMax.min.js"></script>
     <script src="bower_components/scrollmagic/scrollmagic/minified/ScrollMagic.min.js"></script>

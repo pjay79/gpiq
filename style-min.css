@@ -5491,11 +5491,6 @@ button.close {
   src: url("fonts/GreycliffCF-Medium.eot") format("embedded-opentype"), url("fonts/GreycliffCF-Medium.woff2") format("woff2"), url("fonts/GreycliffCF-Medium.woff") format("woff"), url("fonts/GreycliffCF-Medium.ttf") format("truetype"); }
 
 @font-face {
-  font-family: 'GreycliffCF-DemiBold';
-  src: url("fonts/GreycliffCF-DemiBold.eot");
-  src: url("fonts/GreycliffCF-DemiBold.eot") format("embedded-opentype"), url("fonts/GreycliffCF-DemiBold.woff2") format("woff2"), url("fonts/GreycliffCF-DemiBold.woff") format("woff"), url("fonts/GreycliffCF-DemiBold.ttf") format("truetype"); }
-
-@font-face {
   font-family: 'GreycliffCF-ExtraBold';
   src: url("fonts/GreycliffCF-ExtraBold.eot");
   src: url("fonts/GreycliffCF-ExtraBold.eot") format("embedded-opentype"), url("fonts/GreycliffCF-ExtraBold.woff2") format("woff2"), url("fonts/GreycliffCF-ExtraBold.woff") format("woff"), url("fonts/GreycliffCF-ExtraBold.ttf") format("truetype"); }
@@ -5506,22 +5501,64 @@ html, body {
 body {
   font-size: 100%; }
 
-h1 {
+h1, h2 {
   font-family: "GreycliffCF-ExtraBold", "Helvetica Neue", Helvetica, sans-serif; }
 
-h2, h3, h4 {
-  font-family: "GreycliffCF-Medium", "Helvetica Neue", Helvetica, sans-serif; }
+h1 {
+  font-size: 6.19174em;
+  letter-spacing: 2px; }
 
-h1, h2, h3, h4 {
+@media (max-width: 955px) {
+  h1 {
+    font-size: 5.15978em; } }
+
+@media (max-width: 807px) {
+  h1 {
+    font-size: 4.29982em; } }
+
+@media (max-width: 683px) {
+  h1 {
+    font-size: 3.58318em; } }
+
+h2 {
+  font-size: 5.15978em; }
+
+h3 {
+  font-family: "GreycliffCF-Medium", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 2.98598em;
+  text-transform: uppercase;
+  letter-spacing: 4px; }
+
+@media (max-width: 479px) {
+  h3 {
+    font-size: 2.0736em; } }
+
+h1, h2, h3 {
   line-height: 1.2em; }
 
 p {
   font-family: "GreycliffCF-Light", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 2.0736em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
   line-height: 1.4em; }
 
+@media (max-width: 955px) {
+  p {
+    font-size: 1.728em; } }
+
+@media (max-width: 807px) {
+  p {
+    font-size: 1.44em; } }
+
+@media (max-width: 683px) {
+  p {
+    font-size: 1.2em; } }
+
 .container {
-  width: 100%; }
+  width: 100%;
+  margin: 0;
+  padding: 0; }
 
 main {
   background: url("images/hero@1x.jpg?1479586896") no-repeat center center;
@@ -5539,13 +5576,6 @@ main {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.8); }
 
-.main__social {
-  position: relative;
-  top: 40px; }
-
-.main__social img {
-  padding: 0 10px; }
-
 .main__content {
   visibility: hidden;
   position: relative;
@@ -5560,25 +5590,40 @@ main {
   margin: 0 auto; }
 
 .main__content h1 {
-  font-size: 4.29982em;
+  font-family: "DemiBold", "Helvetica Neue", Helvetica, sans-serif;
+  margin-top: -2.5px;
   text-transform: lowercase;
   letter-spacing: 2px;
   color: #4C4C4C; }
 
-@media (min-width: 62em) {
-  .main__content h1 {
-    font-size: 6.19174em; } }
-
 .main__content p {
-  margin-bottom: 50px; }
+  margin-bottom: 25px;
+  text-transform: none; }
 
-.main__content p span {
+@media (max-width: 683px) {
+  .main__content p {
+    padding: 0 10px; } }
+
+.main__content p .highlight {
   color: #2D93E8;
   font-family: "GreycliffCF-ExtraBold", "Helvetica Neue", Helvetica, sans-serif; }
 
+@media (max-width: 683px) {
+  .main__content p .line-break::before {
+    content: "\A";
+    white-space: pre; } }
+
+@media (max-width: 683px) and (orientation: landscape) {
+  .main__content p .line-break::before {
+    content: "";
+    white-space: nowrap; } }
+
 .main__content .call-to-action {
   display: inline-block;
-  margin: 0 auto;
+  margin: -10px auto 0;
+  padding: 10px 45px;
+  font-family: "GreycliffCF-Medium", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 2.0736em;
   border-radius: 0;
   background-color: #2D93E8;
   color: #FFF;
@@ -5586,15 +5631,36 @@ main {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 2px;
-  margin: 10px 0 0 0;
-  padding: 10px 50px;
   -webkit-transition: all 0.45s ease;
   -moz-transition: all 0.45s ease;
   transition: all 0.45s ease; }
 
+@media (max-width: 955px) {
+  .main__content .call-to-action {
+    padding: 10px 35px;
+    font-size: 1.728em; } }
+
+@media (max-width: 807px) {
+  .main__content .call-to-action {
+    padding: 10px 25px;
+    font-size: 1.44em; } }
+
+@media (max-width: 683px) {
+  .main__content .call-to-action {
+    margin-top: -25px;
+    padding: 10px 15px;
+    font-size: 1.2em; } }
+
 .main__content .call-to-action:hover {
   cursor: pointer;
-  background-color: rgba(45, 147, 232, 0.7); }
+  outline: 1px solid #FFF; }
+
+.main__social {
+  position: relative;
+  top: 10px; }
+
+.main__social img {
+  padding: 0 10px; }
 
 section {
   text-align: center; }
@@ -5602,41 +5668,45 @@ section {
 section article {
   padding: 125px 0; }
 
+@media (max-width: 479px) {
+  section article {
+    padding: 75px 0; } }
+
+@media (max-width: 683px) and (orientation: landscape) {
+  section article {
+    padding: 75px 0; } }
+
 section article h1 {
-  display: inline-block;
-  margin-bottom: 25px;
-  font-size: 6.19174em;
-  font-weight: bold;
-  letter-spacing: 2px; }
+  margin-bottom: 25px; }
 
-section article p {
-  font-size: 2.0736em;
-  font-weight: lighter;
-  letter-spacing: 2px;
-  text-transform: uppercase; }
-
-.top {
+.one {
   background: url("images/bp@1x.jpg?1479699230") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
 
-.top article {
+.one article {
   background-color: rgba(76, 76, 76, 0.9); }
 
-.top h1 {
+.one h1 {
   color: #2D93E8; }
 
-.top p {
+.one p {
   color: #FFF; }
 
-.middle article {
-  position: relative;
-  background-color: #FFF;
-  background: url(images/sos.png) repeat; }
+.two {
+  background: url("images/bsl@1x.jpg?1479699325") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
-.middle article img {
+.two article {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.9); }
+
+.two article img {
   display: block;
   margin: 0 auto;
   position: absolute;
@@ -5645,73 +5715,100 @@ section article p {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%); }
 
-.middle h1 {
+.two h1 {
   color: #2D93E8; }
 
-.middle p {
+.two p {
   color: #4C4C4C; }
 
-.middle2 article {
+.three article {
   padding: 0;
   background-color: #4C4C4C; }
 
-.middle2 article img {
+.three article img {
   display: block;
   margin: 0 auto; }
 
-.middle2 article .left {
+.three article .left {
   padding: 150px;
   background-color: #2D93E8; }
 
-.middle2 article .right {
+@media (max-width: 479px) {
+  .three article .left {
+    padding: 75px 50px; } }
+
+@media (max-width: 683px) and (orientation: landscape) {
+  .three article .left {
+    padding: 75px 50px; } }
+
+.three article .right {
   padding: 150px;
   background-color: #4C4C4C; }
 
-.middle2 h1 {
-  color: #2D93E8; }
+@media (max-width: 479px) {
+  .three article .right {
+    padding: 75px 50px; } }
 
-.middle2 h2 {
+@media (max-width: 683px) and (orientation: landscape) {
+  .three article .right {
+    padding: 75px 50px; } }
+
+.three h3 {
   margin-top: 0;
-  margin-bottom: 75px;
-  font-size: 2.98598em;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 4px;
+  margin-bottom: 50px;
   color: #FFF; }
 
-.middle2 p {
-  color: #FFF; }
-
-.bottom {
-  background: url("images/bsl@1x.jpg?1479699325") no-repeat center center;
+.four {
+  background: url("images/pills@1x.jpg?1479717060") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
 
-.bottom article {
+.four article {
+  padding: 125px 100px;
+  background-color: rgba(45, 147, 232, 0.9);
+  text-align: center; }
+
+@media (max-width: 479px) {
+  .four article {
+    padding: 75px 5px; } }
+
+.four article div * {
+  margin: 0; }
+
+.four article img {
+  padding-bottom: 75px;
+  display: block;
+  margin: 0 auto; }
+
+.four article h3 {
+  color: #FFF; }
+
+.four article h3:first-of-type {
+  margin-bottom: 50px; }
+
+@media (max-width: 991px) {
+  .four article h3:first-of-type {
+    margin-bottom: 25px; } }
+
+.five article {
   padding: 150px 0;
-  background-color: rgba(255, 255, 255, 0.9); }
+  background: url(images/sos.png) repeat; }
 
-.bottom h1 {
+.five h1 {
+  text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.8);
+  color: #4C4C4C; }
+
+.five h2 {
+  padding-top: 50px;
   padding-bottom: 10px;
-  font-size: 5.15978em;
-  font-weight: bold;
-  color: #2D93E8; }
-
-.bottom h2 {
-  margin-bottom: 75px;
-  font-size: 2.98598em;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 4px;
   color: #2D93E8; }
 
 footer {
   text-align: center; }
 
 footer h1 {
-  font-size: 6.19174em;
   color: #FFF; }
 
 .contact__form {
@@ -5728,10 +5825,23 @@ label {
   left: 0;
   margin: 5px auto;
   color: #FFF;
+  font-family: "GreycliffCF-Medium", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 2.0736em;
   font-weight: bold;
   letter-spacing: 2px;
   text-align: left; }
+
+@media (max-width: 991px) {
+  label {
+    width: 62.5%; } }
+
+@media (max-width: 479px) {
+  label {
+    width: 75%; } }
+
+@media (max-width: 479px) {
+  label {
+    font-size: 1.44em; } }
 
 input[type=email], input[type=text] {
   box-shadow: none;
@@ -5743,9 +5853,18 @@ input[type=email], input[type=text] {
   margin: 5px auto;
   background: transparent;
   color: #FFF;
+  font-family: "GreycliffCF-Medium", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1.44em;
   font-weight: bold;
   letter-spacing: 2px; }
+
+@media (max-width: 991px) {
+  input[type=email], input[type=text] {
+    width: 62.5%; } }
+
+@media (max-width: 479px) {
+  input[type=email], input[type=text] {
+    width: 75%; } }
 
 input[type=email]:-moz-placeholder, input[type=text]:-moz-placeholder {
   padding-left: 4px;
@@ -5798,16 +5917,29 @@ input:-webkit-autofill {
 
 #message {
   width: 50%;
+  resize: vertical;
+  max-height: 150px;
+  min-height: 150px;
   border: 3px solid #FFF;
   border-radius: 0;
   margin: 50px auto;
   background: url(images/sos.png) repeat;
   background-color: #4C4C4C;
+  font-family: "GreycliffCF-Medium", "Helvetica Neue", Helvetica, sans-serif;
   font-weight: bold;
   letter-spacing: 2px; }
 
+@media (max-width: 991px) {
+  #message {
+    width: 62.5%; } }
+
+@media (max-width: 479px) {
+  #message {
+    width: 75%; } }
+
 #message:-moz-placeholder {
   color: #4C4C4C;
+  font-family: "GreycliffCF-Medium", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1em;
   font-weight: lighter;
   font-style: italic;
@@ -5815,6 +5947,7 @@ input:-webkit-autofill {
 
 #message::-moz-placeholder {
   color: #4C4C4C;
+  font-family: "GreycliffCF-Medium", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1em;
   font-weight: lighter;
   font-style: italic;
@@ -5822,6 +5955,7 @@ input:-webkit-autofill {
 
 #message:-ms-input-placeholder {
   color: #4C4C4C;
+  font-family: "GreycliffCF-Medium", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1em;
   font-weight: lighter;
   font-style: italic;
@@ -5829,6 +5963,7 @@ input:-webkit-autofill {
 
 #message::-webkit-input-placeholder {
   color: #4C4C4C;
+  font-family: "GreycliffCF-Medium", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1em;
   font-weight: lighter;
   font-style: italic;
@@ -5844,6 +5979,7 @@ input:-webkit-autofill {
   margin: 0 auto;
   background-color: #2D93E8;
   color: #FFF;
+  font-family: "GreycliffCF-Medium", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 2.0736em;
   text-align: center;
   font-weight: bold;
@@ -5852,6 +5988,10 @@ input:-webkit-autofill {
   -webkit-transition: all 0.45s ease;
   -moz-transition: all 0.45s ease;
   transition: all 0.45s ease; }
+
+@media (max-width: 683px) {
+  .btn {
+    font-size: 1.2em; } }
 
 .btn:hover {
   color: #FFF;
@@ -5879,4 +6019,17 @@ input:-webkit-autofill {
   text-align: center; }
 
 .copyright p {
-  font-size: 1.728em; }
+  font-size: 2.0736em;
+  text-transform: none; }
+
+@media (max-width: 683px) {
+  .copyright p {
+    font-size: 1.44em; } }
+
+.copyright p:last-of-type {
+  font-size: 1em;
+  text-transform: uppercase; }
+
+.copyright a:link, .copyright a:hover, .copyright a:visited {
+  text-decoration: none;
+  color: #FFF; }

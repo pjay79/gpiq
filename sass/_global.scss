@@ -18,14 +18,6 @@ outline: 1px dotted #ff0000;
   url('fonts/GreycliffCF-Medium.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'GreycliffCF-DemiBold';
-  src: url('fonts/GreycliffCF-DemiBold.eot');
-  src: url('fonts/GreycliffCF-DemiBold.eot') format('embedded-opentype'),
-  url('fonts/GreycliffCF-DemiBold.woff2') format('woff2'),
-  url('fonts/GreycliffCF-DemiBold.woff') format('woff'),
-  url('fonts/GreycliffCF-DemiBold.ttf') format('truetype');
-}
-@font-face {
   font-family: 'GreycliffCF-ExtraBold';
   src: url('fonts/GreycliffCF-ExtraBold.eot');
   src: url('fonts/GreycliffCF-ExtraBold.eot') format('embedded-opentype'),
@@ -39,22 +31,57 @@ overflow-x: hidden;
 body {
   font-size: 100%;
 }
-h1 {
+h1, h2 {
   font-family:"GreycliffCF-ExtraBold", "Helvetica Neue", Helvetica, sans-serif;
 }
-h2, h3, h4 {
-  font-family: "GreycliffCF-Medium", "Helvetica Neue", Helvetica, sans-serif;
+h1 {
+  font-size: ms(10);
+  @include media('<956px') {
+    font-size: ms(9);
+  }
+  @include media('<808px') {
+    font-size: ms(8);
+  }
+  @include media('<684px') {
+    font-size: ms(7);
+  }
+  letter-spacing: 2px;
 }
-h1, h2, h3, h4 {
+h2 {
+  font-size: ms(9);
+}
+h3 {
+  font-family:"GreycliffCF-Medium", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: ms(6);
+  @include media('<480px') {
+    font-size: ms(4);
+  }
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+h1, h2, h3 {
   line-height: 1.2em;
 }
 p {
   font-family: "GreycliffCF-Light", "Helvetica Neue", Helvetica, sans-serif;
   font-size: ms(4);
+  @include media('<956px') {
+    font-size: ms(3);
+  }
+  @include media('<808px') {
+    font-size: ms(2);
+  }
+  @include media('<684px') {
+    font-size: ms(1);
+  }
+  letter-spacing: 2px;
+  text-transform: uppercase;
   line-height: 1.4em;
 }
 .container {
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 // Main
 main {
@@ -69,13 +96,6 @@ main {
   height: 100%;
   background-color: rgba($white, 0.8);
 }
-.main__social {
-  position: relative;
-  top: 40px;
-  img {
-    padding: 0 10px;
-  }
-}
 .main__content {
   visibility: hidden;
   position: relative;
@@ -89,24 +109,52 @@ main {
     margin: 0 auto;
   }
   h1 {
-    font-size: ms(8);
-    @include media('>=desktop') {
-      font-size: ms(10);
-    }
+    font-family:"DemiBold", "Helvetica Neue", Helvetica, sans-serif;
+    margin-top: -2.5px;
     text-transform: lowercase;
     letter-spacing: 2px;
     color: $color2;
   }
   p {
-    margin-bottom: 50px;
-    span {
+    margin-bottom: 25px;
+    text-transform: none;
+    @include media('<684px') {
+      padding: 0 10px;
+    }
+    .highlight {
       color: $color1;
       font-family: "GreycliffCF-ExtraBold", "Helvetica Neue", Helvetica, sans-serif;
+    }
+    .line-break::before {
+      @include media('<684px') {
+        content: "\A";
+        white-space: pre;
+      }
+      @include media('<684px', 'landscape') {
+        content: "";
+        white-space: nowrap;
+      }
     }
   }
   .call-to-action {
     display: inline-block;
-    margin: 0 auto;
+    margin: -10px auto 0;
+    padding: 10px 45px;
+    font-family:"GreycliffCF-Medium", "Helvetica Neue", Helvetica, sans-serif;
+    font-size: ms(4);
+    @include media('<956px') {
+      padding: 10px 35px;
+      font-size: ms(3);
+    }
+    @include media('<808px') {
+      padding: 10px 25px;
+      font-size: ms(2);
+    }
+    @include media('<684px') {
+      margin-top: -25px;
+      padding: 10px 15px;
+      font-size: ms(1);
+    }
     border-radius: 0;
     background-color: $color1;
     color: $white;
@@ -114,38 +162,39 @@ main {
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
-    margin: 10px 0 0 0;
-    padding: 10px 50px;
     -webkit-transition: all 0.45s ease;
     -moz-transition: all 0.45s ease;
     transition: all 0.45s ease;
     &:hover {
       cursor: pointer;
-      background-color: rgba($color1, 0.7);
+      outline: 1px solid $white;
       }
     }
 }
-// Section 1
+.main__social {
+  position: relative;
+  top: 10px;
+  img {
+    padding: 0 10px;
+  }
+}
+// Sections
 section {
   text-align: center;
   article {
     padding: 125px 0;
-    h1 {
-      display: inline-block;
-      margin-bottom: 25px;
-      font-size: ms(10);
-      font-weight: bold;
-      letter-spacing: 2px;
+    @include media('<480px') {
+      padding: 75px 0;
     }
-    p {
-      font-size: ms(4);
-      font-weight: lighter;
-      letter-spacing: 2px;
-      text-transform: uppercase;
+    @include media('<684px', 'landscape') {
+      padding: 75px 0;
+    }
+    h1 {
+      margin-bottom: 25px;
     }
   }
 }
-.top {
+.one {
   @include cover-background('bp@1x.jpg');
   article {
     background-color: rgba($color2, 0.9);
@@ -157,16 +206,15 @@ section {
     color: $white;
   }
 }
-.middle {
+.two {
+  @include cover-background('bsl@1x.jpg');
   article {
     position: relative;
-    background-color: $white;
-    background: url(images/sos.png) repeat;
+    background-color: rgba($white, 0.9);
     img {
       display: block;
       margin: 0 auto;
       position: absolute;;
-      //top: -25px;
       top: 0%;
       left: 50%;
       transform: translate(-50%, -50%);
@@ -180,7 +228,7 @@ section {
     color: $color2;
   }
 }
-.middle2 {
+.three {
   article {
     padding: 0;
     background-color: $color2;
@@ -190,47 +238,71 @@ section {
     }
     .left {
       padding: 150px;
+      @include media('<480px') {
+        padding: 75px 50px;
+      }
+      @include media('<684px', 'landscape') {
+        padding: 75px 50px;
+      }
       background-color: $color1;
     }
     .right {
       padding: 150px;
+      @include media('<480px') {
+        padding: 75px 50px;
+      }
+      @include media('<684px', 'landscape') {
+        padding: 75px 50px;
+      }
       background-color: $color2;
     }
   }
-  h1 {
-    color: $color1;
-  }
-  h2 {
+  h3 {
     margin-top: 0;
-    margin-bottom: 75px;
-    font-size: ms(6);
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    color: $white;
-  }
-  p {
+    margin-bottom: 50px;
     color: $white;
   }
 }
-.bottom {
-  @include cover-background('bsl@1x.jpg');
+.four {
+  @include cover-background('pills@1x.jpg');
+  article {
+    padding: 125px 100px;
+    @include media('<480px') {
+      padding: 75px 5px;
+    }
+    background-color: rgba($color1, 0.9);
+    text-align: center;
+    div * {
+      margin: 0;
+    }
+    img {
+      padding-bottom: 75px;
+      display: block;
+      margin: 0 auto;
+    }
+    h3 {
+      color: $white;
+    }
+    h3:first-of-type {
+      margin-bottom: 50px;
+      @include media('<992px') {
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
+.five {
   article {
     padding: 150px 0;
-    background-color: rgba($white, 0.9);
+    background: url(images/sos.png) repeat;
   }
   h1 {
-    padding-bottom: 10px;
-    font-size: ms(9);
-    font-weight: bold;
-    color: $color1;
+    text-shadow: 2px 2px 2px rgba($white, 0.8);
+    color: $color2;
   }
   h2 {
-    margin-bottom: 75px;
-    font-size: ms(6);
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 4px;
+    padding-top: 50px;
+    padding-bottom: 10px;
     color: $color1;
   }
 }
@@ -238,7 +310,6 @@ section {
 footer {
   text-align: center;
   h1 {
-    font-size: ms(10);
     color: $white;
   }
 }
@@ -254,11 +325,21 @@ footer {
 label {
   display: block;
   width: 50%;
+  @include media('<992px') {
+    width: 62.5%;
+  }
+  @include media('<480px') {
+    width: 75%;
+  }
   top: 0;
   left: 0;
   margin: 5px auto;
   color: $white;
+  font-family:"GreycliffCF-Medium", "Helvetica Neue", Helvetica, sans-serif;
   font-size: ms(4);
+  @include media('<480px') {
+    font-size: ms(2);
+  }
   font-weight: bold;
   letter-spacing: 2px;
   text-align: left;
@@ -266,6 +347,12 @@ label {
 input[type=email], input[type=text] {
   box-shadow: none;
   width: 50%;
+  @include media('<992px') {
+    width: 62.5%;
+  }
+  @include media('<480px') {
+    width: 75%;
+  }
   padding: 0;
   border: 0;
   border-radius: 0;
@@ -273,6 +360,7 @@ input[type=email], input[type=text] {
   margin: 5px auto;
   background: transparent;
   color: $white;
+  font-family:"GreycliffCF-Medium", "Helvetica Neue", Helvetica, sans-serif;
   font-size: ms(2);
   font-weight: bold;
   letter-spacing: 2px;
@@ -304,15 +392,26 @@ input:-webkit-autofill {
 }
 #message {
   width: 50%;
+  @include media('<992px') {
+    width: 62.5%;
+  }
+  @include media('<480px') {
+    width: 75%;
+  }
+  resize:vertical;
+  max-height:150px;
+  min-height:150px;
   border: 3px solid $white;
   border-radius: 0;
   margin: 50px auto;
   background: url(images/sos.png) repeat;
   background-color: $color2;
+  font-family:"GreycliffCF-Medium", "Helvetica Neue", Helvetica, sans-serif;
   font-weight: bold;
   letter-spacing: 2px;
   @include input-placeholder {
     color: $color2;
+    font-family:"GreycliffCF-Medium", "Helvetica Neue", Helvetica, sans-serif;
     font-size: ms(0);
     font-weight: lighter;
     font-style: italic;
@@ -329,7 +428,11 @@ input:-webkit-autofill {
   margin: 0 auto;
   background-color: $color1;
   color: $white;
+  font-family:"GreycliffCF-Medium", "Helvetica Neue", Helvetica, sans-serif;
   font-size: ms(4);
+  @include media('<684px') {
+    font-size: ms(1);
+  }
   text-align: center;
   font-weight: bold;
   letter-spacing: 3px;
@@ -364,6 +467,18 @@ input:-webkit-autofill {
   color: $white;
   text-align: center;
   p {
-    font-size: ms(3);
+    font-size: ms(4);
+    text-transform: none;
+    @include media('<684px') {
+      font-size: ms(2);
+    }
+  }
+  p:last-of-type {
+    font-size: ms(0);
+    text-transform: uppercase;
+  }
+  a:link, a:hover, a:visited {
+    text-decoration:none;
+    color: $white;
   }
 }
