@@ -5561,7 +5561,7 @@ p {
   padding: 0; }
 
 main {
-  background: url("images/hero@1x.jpg?1479586896") no-repeat center center;
+  background: url("images/hero@1x.jpg?1480220003") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -5588,6 +5588,9 @@ main {
 .main__content img {
   display: inline-block;
   margin: 0 auto; }
+
+.main__content .logo {
+  width: 214px; }
 
 .main__content h1 {
   font-family: "GreycliffCF-Medium", "Helvetica Neue", Helvetica, sans-serif;
@@ -5680,7 +5683,7 @@ section article h1 {
   margin-bottom: 25px; }
 
 .one {
-  background: url("images/bp@1x.jpg?1479699230") no-repeat center center;
+  background: url("images/bp@1x.jpg?1480220025") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -5696,7 +5699,7 @@ section article h1 {
   color: #FFF; }
 
 .two {
-  background: url("images/bsl@1x.jpg?1479699325") no-repeat center center;
+  background: url("images/bsl@1x.jpg?1480220029") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -5759,7 +5762,7 @@ section article h1 {
   color: #FFF; }
 
 .four {
-  background: url("images/pills@1x.jpg?1479717060") no-repeat center center;
+  background: url("images/pills@1x.jpg?1480220020") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
