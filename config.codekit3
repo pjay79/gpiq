@@ -4035,7 +4035,7 @@
 		"oA": 0,
 		"oAP": "\/images\/bp@1x.jpg",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/images\/bsl@1x.jpg": {
 		"ft": 16384,
@@ -4043,7 +4043,7 @@
 		"oA": 0,
 		"oAP": "\/images\/bsl@1x.jpg",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/images\/doctor-stethoscope.svg": {
 		"ft": 2097152,
@@ -4081,7 +4081,7 @@
 		"oA": 0,
 		"oAP": "\/images\/hero@1x.jpg",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/images\/linkedin.svg": {
 		"ft": 2097152,
@@ -4109,7 +4109,7 @@
 		"oA": 0,
 		"oAP": "\/images\/pills@1x.jpg",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/images\/plus.svg": {
 		"ft": 2097152,
