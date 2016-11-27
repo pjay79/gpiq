@@ -109,7 +109,7 @@ main {
     margin: 0 auto;
   }
   h1 {
-    font-family:"DemiBold", "Helvetica Neue", Helvetica, sans-serif;
+    font-family:"GreycliffCF-Medium", "Helvetica Neue", Helvetica, sans-serif;
     margin-top: -2.5px;
     text-transform: lowercase;
     letter-spacing: 2px;
@@ -316,7 +316,7 @@ footer {
 // Footer contact
 .contact__form {
   padding: 50px 0 50px;
-  background-color: $color2;
+  background-color: rgba($color2, 0.95);
   h3 {
     margin-bottom: 25px;
   }
@@ -462,7 +462,6 @@ input:-webkit-autofill {
 .copyright {
   padding: 75px 0;
   border-top: 2px solid $white;
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQIW2NkYGD4z8DAwMgABXAGNgGwSgwVAFbmAgXxvZSoAAAAAElFTkSuQmCC) repeat;
   background-color: $color2;
   color: $white;
   text-align: center;

@@ -3594,7 +3594,7 @@
 		"tS": 0
 		},
 	"\/config.rb": {
-		"ft": 8192,
+		"ft": 131072,
 		"oA": 0,
 		"oAP": "\/config.rb",
 		"oF": 0
@@ -4029,14 +4029,6 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/images\/bp.jpg": {
-		"ft": 16384,
-		"iS": 1624044,
-		"oA": 0,
-		"oAP": "\/images\/bp.jpg",
-		"oF": 0,
-		"opt": 0
-		},
 	"\/images\/bp@1x.jpg": {
 		"ft": 16384,
 		"iS": 115906,
@@ -4045,51 +4037,11 @@
 		"oF": 0,
 		"opt": 0
 		},
-	"\/images\/bp@2x.jpg": {
-		"ft": 16384,
-		"iS": 385932,
-		"oA": 0,
-		"oAP": "\/images\/bp@2x.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/images\/bp@3x.jpg": {
-		"ft": 16384,
-		"iS": 0,
-		"oA": 0,
-		"oAP": "\/images\/bp@3x.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/images\/bsl.jpeg": {
-		"ft": 16384,
-		"iS": 1122218,
-		"oA": 0,
-		"oAP": "\/images\/bsl.jpg",
-		"oF": 0,
-		"opt": 0
-		},
 	"\/images\/bsl@1x.jpg": {
 		"ft": 16384,
 		"iS": 127824,
 		"oA": 0,
 		"oAP": "\/images\/bsl@1x.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/images\/bsl@2x.jpg": {
-		"ft": 16384,
-		"iS": 382247,
-		"oA": 0,
-		"oAP": "\/images\/bsl@2x.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/images\/bsl@3x.jpg": {
-		"ft": 16384,
-		"iS": 743292,
-		"oA": 0,
-		"oAP": "\/images\/bsl@3x.jpg",
 		"oF": 0,
 		"opt": 0
 		},
@@ -4131,22 +4083,6 @@
 		"oF": 0,
 		"opt": 0
 		},
-	"\/images\/hero@2x.jpg": {
-		"ft": 16384,
-		"iS": 357820,
-		"oA": 0,
-		"oAP": "\/images\/hero@2x.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/images\/hero@3x.jpg": {
-		"ft": 16384,
-		"iS": 1048576,
-		"oA": 0,
-		"oAP": "\/images\/hero@3x.jpg",
-		"oF": 0,
-		"opt": 0
-		},
 	"\/images\/linkedin.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -4157,53 +4093,15 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/images\/logo.png": {
-		"ft": 32768,
-		"iS": 24677,
-		"oA": 0,
-		"oAP": "\/images\/logo.png",
+	"\/images\/logo_svg.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/logo_svg.svg",
 		"oF": 0,
-		"opt": 1
-		},
-	"\/images\/logo_crop.png": {
-		"ft": 32768,
-		"iS": 10255,
-		"oA": 0,
-		"oAP": "\/images\/logo_crop.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/images\/logo_crop2.png": {
-		"ft": 32768,
-		"iS": 4172,
-		"oA": 0,
-		"oAP": "\/images\/logo_crop2.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/images\/logo_crop_small.png": {
-		"ft": 32768,
-		"iS": 8186,
-		"oA": 0,
-		"oAP": "\/images\/logo_crop_small.png",
-		"oF": 0,
-		"opt": 1
-		},
-	"\/images\/logo_white.png": {
-		"ft": 32768,
-		"iS": 2611,
-		"oA": 0,
-		"oAP": "\/images\/logo_white.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/images\/pills.jpeg": {
-		"ft": 16384,
-		"iS": 2637508,
-		"oA": 0,
-		"oAP": "\/images\/pills.jpg",
-		"oF": 0,
-		"opt": 0
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/images\/pills@1x.jpg": {
 		"ft": 16384,
@@ -4261,7 +4159,7 @@
 		},
 	"\/index.html": {
 		"ft": 8192,
-		"oA": 0,
+		"oA": 2,
 		"oAP": "\/index.html",
 		"oF": 0
 		},
