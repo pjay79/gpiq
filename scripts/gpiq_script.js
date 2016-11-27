@@ -20,18 +20,45 @@
   $(window).on("load", function() {
   var main = new TimelineMax({paused:true, delay: 0.5});
   main.set($('.main__content'), {visibility: "visible"})
-      .from($('.main__content img'), 0.3, {autoAlpha: 0, scale: 0, ease: Power4.easeOut})
-      .staggerFrom($('.main__content h1 span'), 0.3, {autoAlpha: 0, ease: Power4.easeOut}, 0.15, 0)
-      .from($('.main__content p'), 0.3, {autoAlpha: 0, ease: Power4.easeOut})
-      .from($('.main__content .call-to-action'), 0.25, {autoAlpha: 0, x: -150, ease: Power2.easeOut})
-      .from($('.main__social'), 0.5, {autoAlpha: 0, scale: 0, y: 150, ease: Power2.easeOut})
+      .from($('.main__content img'), 1, {autoAlpha: 0, scale: 0, ease: Power4.easeOut})
+      .staggerFrom($('.main__content h1 span'), 1.25, {autoAlpha: 0, ease: Power4.easeOut, delay: 0.5}, 0.25, 0)
+      .from($('.main__content p'), 0.25, {autoAlpha: 0, ease: Power1.easeOut}, 1.25)
+      .from($('.main__content .call-to-action'), 0.15, {autoAlpha: 0, y: 50, ease: Expo.easeOut}, 1.5)
+      .from($('.main__social'), 0.15, {autoAlpha: 0, ease: Power2.easeOut})
       .add('headerIn');
   main.play();
   });
+  // ScrollMagic scenes
+  var controller = new $.ScrollMagic.Controller();
+  // Trigger A
+  var scene = new $.ScrollMagic.Scene({triggerElement: "#trigger-a"});
+  var section__animation_a = new TimelineMax();
+  section__animation_a.from($('.one h1'), 0.5, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut})
+                     .staggerFrom($('.one p'), 0.5, {autoAlpha: 0, cycle:{x:[150,-150]}, ease: Power4.easeOut}, 0.25, 0.25)
+                     .from($('.two h1'), 0.5, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut}, 1)
+                     .staggerFrom($('.two p'), 0.50, {autoAlpha: 0, cycle:{x:[150,-150]}, ease: Power4.easeOut}, 0.25, 1.5);
+	scene.setTween(section__animation_a);
+	scene.addTo(controller);
+  //Trigger B
+  var scene = new $.ScrollMagic.Scene({triggerElement: "#trigger-b"});
+  var section__animation_b = new TimelineMax();
+  section__animation_b.from($('.left h3'), 0.5, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut})
+                     .from($('.left img'), 0.5, {autoAlpha: 0, scale: 0, ease: Power4.easeOut}, 0.25)
+                     .from($('.right h3'), 0.5, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut}, 0)
+                     .from($('.right img'), 0.50, {autoAlpha: 0, scale: 0, ease: Power4.easeOut}, 0.25);
+  scene.setTween(section__animation_b);
+  scene.addTo(controller);
+  //Trigger C
+  var scene = new $.ScrollMagic.Scene({triggerElement: "#trigger-c"});
+  var section__animation_c = new TimelineMax();
+  section__animation_c.from($('.four img'), 0.5, {autoAlpha: 0, scale: 0, ease: Power4.easeOut})
+                      .staggerFrom($('.four h3'), 0.50, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut}, 0.25, 0);
+  scene.setTween(section__animation_c);
+  scene.addTo(controller);
   // Form submission
   $('form').submit(function() {
         var message__confirmation = new TimelineMax();
-            message__confirmation.to($('#confirmation'), 1, {opacity: 1, ease: Expo.easeOut})
+            message__confirmation.to($('#confirmation'), 1, {autoAlpha: 1, ease: Expo.easeOut})
                                  .to($('#confirmation'), 1, {autoAlpha: 0, ease: Expo.easeOut, delay: 0.5});
         event.preventDefault();
         var formData = $('form').serialize();
