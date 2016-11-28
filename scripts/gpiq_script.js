@@ -21,10 +21,10 @@
   var main = new TimelineMax({paused:true, delay: 0.5});
   main.set($('.main__content'), {visibility: "visible"})
       .from($('.main__content img'), 1, {autoAlpha: 0, scale: 0, ease: Power4.easeOut})
-      .staggerFrom($('.main__content h1 span'), 1.25, {autoAlpha: 0, ease: Power4.easeOut, delay: 0.5}, 0.15, 0)
-      .from($('.main__content p'), 0.25, {autoAlpha: 0, ease: Power1.easeOut}, 1.25)
-      .from($('.main__content .call-to-action'), 0.15, {autoAlpha: 0, y: 50, ease: Expo.easeOut}, 1.5)
-      .from($('.main__social'), 0.15, {autoAlpha: 0, ease: Power2.easeOut})
+      .staggerFrom($('.main__content h1 span'), 1, {autoAlpha: 0, ease: Power4.easeOut, delay: 0.5}, 0.15, 0)
+      .from($('.main__content p'), 0.25, {autoAlpha: 0, ease: Power1.easeOut}, 1)
+      .from($('.main__content .call-to-action'), 0.15, {autoAlpha: 0, y: 50, ease: Expo.easeOut}, 1.25)
+      .from($('.main__social'), 0.15, {autoAlpha: 0, scale: 0, ease: Power2.easeOut})
       .add('headerIn');
   main.play();
   });
