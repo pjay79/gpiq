@@ -4045,6 +4045,32 @@
 		"oF": 0,
 		"opt": 1
 		},
+	"\/images\/company_logo.jpg": {
+		"ft": 16384,
+		"iS": 20522,
+		"oA": 0,
+		"oAP": "\/images\/company_logo.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/company_logo.png": {
+		"ft": 32768,
+		"iS": 7631,
+		"oA": 0,
+		"oAP": "\/images\/company_logo.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/company_logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/company_logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/images\/doctor-stethoscope.svg": {
 		"ft": 2097152,
 		"miP": 0,

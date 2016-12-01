@@ -47,10 +47,10 @@
   //Trigger B
   var scene = new $.ScrollMagic.Scene({triggerElement: "#trigger-b"});
   var section__animation_b = new TimelineMax();
-  section__animation_b.from($('.left h3'), 0.5, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut})
-                     .from($('.left img'), 0.5, {autoAlpha: 0, scale: 0, ease: Power4.easeOut}, 0.25)
-                     .from($('.right h3'), 0.5, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut}, 0)
-                     .from($('.right img'), 0.50, {autoAlpha: 0, scale: 0, ease: Power4.easeOut}, 0.25);
+  section__animation_b.from($('.left h3'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut})
+                     .from($('.left img'), 1, {autoAlpha: 0, scale: 0, ease: Power4.easeOut}, 0.25)
+                     .from($('.right h3'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut}, 0.5)
+                     .from($('.right img'), 1, {autoAlpha: 0, scale: 0, ease: Power4.easeOut}, 0.75 );
   scene.setTween(section__animation_b);
   scene.addTo(controller);
   //Trigger C
@@ -59,6 +59,26 @@
   section__animation_c.from($('.four img'), 0.5, {autoAlpha: 0, scale: 0, ease: Power4.easeOut})
                       .staggerFrom($('.four h3'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut}, 0.25, 0);
   scene.setTween(section__animation_c);
+  scene.addTo(controller);
+  //Trigger D
+  var scene = new $.ScrollMagic.Scene({triggerElement: "#trigger-d"});
+  var section__animation_d = new TimelineMax();
+  section__animation_d.from($('.five h1'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut})
+                      .staggerFrom($('.five h2'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut}, 0.25, 0.25);
+  scene.setTween(section__animation_d);
+  scene.addTo(controller);
+  //Trigger E
+  var scene = new $.ScrollMagic.Scene({triggerElement: "#trigger-e"});
+  var section__animation_e = new TimelineMax();
+  section__animation_e.staggerFrom($('.six img'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut}, 0.25);
+  scene.setTween(section__animation_e);
+  scene.addTo(controller);
+  //Portal
+  var scene = new $.ScrollMagic.Scene({triggerElement: "#portal"});
+  var section__animation_portal = new TimelineMax();
+  section__animation_portal.from($('.portal h1'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut})
+                           .staggerFrom($('.portal h2'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut}, 0.25, 0.25);
+  scene.setTween(section__animation_portal);
   scene.addTo(controller);
   // Form submission
   $('form').submit(function() {
@@ -77,3 +97,8 @@
         $('#message').val('');
         return false;
     });
+ // Terms and Privacy
+ $('.terms-and-privacy').click(function(){
+   $('.terms-and-privacy__content').slideToggle();
+   $("html, body").animate({ scrollTop: $(document).height() }, 1000);
+ });
