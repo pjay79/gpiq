@@ -285,9 +285,6 @@ section {
   @include cover-background('doctor@1x.jpg');
   article {
     background-color: rgba($color1, 0.9);
-    @include media('<480px') {
-      padding: 75px 0;
-    }
   }
   h1 {
     color: $white;

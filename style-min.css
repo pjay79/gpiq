@@ -5792,10 +5792,6 @@ section article h1 {
 .five article {
   background-color: rgba(45, 147, 232, 0.9); }
 
-@media (max-width: 479px) {
-  .five article {
-    padding: 75px 0; } }
-
 .five h1 {
   color: #FFF;
   margin-bottom: 50px; }
