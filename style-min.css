@@ -5782,6 +5782,15 @@ section article h1 {
   .four article h3:first-of-type {
     margin-bottom: 25px; } }
 
+.portal {
+  background: url(images/sos.png) repeat; }
+
+.portal h1 {
+  color: #2D93E8; }
+
+.portal h3 {
+  color: #2D93E8; }
+
 .five {
   background: url("images/doctor@1x.jpg?1480678259") no-repeat center center;
   -webkit-background-size: cover;
@@ -5801,15 +5810,6 @@ section article h1 {
   height: 150px;
   margin: 10px 25px;
   border: 4px solid #FFF; }
-
-.portal {
-  background: url(images/sos.png) repeat; }
-
-.portal h1 {
-  color: #2D93E8; }
-
-.portal h3 {
-  color: #2D93E8; }
 
 footer {
   text-align: center; }

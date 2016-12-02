@@ -281,6 +281,15 @@ section {
     }
   }
 }
+.portal {
+  background: url(images/sos.png) repeat;
+  h1 {
+    color: $color1;
+  }
+  h3 {
+    color: $color1;
+  }
+}
 .five {
   @include cover-background('doctor@1x.jpg');
   article {
@@ -295,15 +304,6 @@ section {
     height: 150px;
     margin: 10px 25px;
     border: 4px solid $white;
-  }
-}
-.portal {
-  background: url(images/sos.png) repeat;
-  h1 {
-    color: $color1;
-  }
-  h3 {
-    color: $color1;
   }
 }
 // Footer

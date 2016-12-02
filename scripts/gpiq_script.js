@@ -30,41 +30,35 @@
   });
   // ScrollMagic scenes
   var controller = new $.ScrollMagic.Controller();
-  // Trigger A
-  var scene = new $.ScrollMagic.Scene({triggerElement: "#trigger-a"});
-  var section__animation_a = new TimelineMax();
-  section__animation_a.from($('.one h1'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut})
+  // Trigger 1
+  var scene = new $.ScrollMagic.Scene({triggerElement: "#trigger-one"});
+  var section__animation_one = new TimelineMax();
+  section__animation_one.from($('.one h1'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut})
                      .staggerFrom($('.one p'), 1, {autoAlpha: 0, cycle:{x:[150,-150]}, ease: Power4.easeOut}, 0.25, 0.5);
-	scene.setTween(section__animation_a);
+	scene.setTween(section__animation_one);
 	scene.addTo(controller);
-  // Trigger AA
-  var scene = new $.ScrollMagic.Scene({triggerElement: "#trigger-aa"});
-  var section__animation_aa = new TimelineMax();
-  section__animation_aa.from($('.two h1'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut})
+  // Trigger 2
+  var scene = new $.ScrollMagic.Scene({triggerElement: "#trigger-two"});
+  var section__animation_two = new TimelineMax();
+  section__animation_two.from($('.two h1'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut})
                      .staggerFrom($('.two p'), 1, {autoAlpha: 0, cycle:{x:[150,-150]}, ease: Power4.easeOut}, 0.25, 0.5);
-  scene.setTween(section__animation_aa);
+  scene.setTween(section__animation_two);
   scene.addTo(controller);
-  //Trigger B
-  var scene = new $.ScrollMagic.Scene({triggerElement: "#trigger-b"});
-  var section__animation_b = new TimelineMax();
-  section__animation_b.from($('.left h3'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut})
+  //Trigger 4
+  var scene = new $.ScrollMagic.Scene({triggerElement: "#trigger-three"});
+  var section__animation_three = new TimelineMax();
+  section__animation_three.from($('.left h3'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut})
                      .from($('.left img'), 1, {autoAlpha: 0, scale: 0, ease: Power4.easeOut}, 0.25)
                      .from($('.right h3'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut}, 0.5)
                      .from($('.right img'), 1, {autoAlpha: 0, scale: 0, ease: Power4.easeOut}, 0.75 );
-  scene.setTween(section__animation_b);
+  scene.setTween(section__animation_three);
   scene.addTo(controller);
-  //Trigger C
-  var scene = new $.ScrollMagic.Scene({triggerElement: "#trigger-c"});
-  var section__animation_c = new TimelineMax();
-  section__animation_c.from($('.four img'), 0.5, {autoAlpha: 0, scale: 0, ease: Power4.easeOut})
+  //Trigger 4
+  var scene = new $.ScrollMagic.Scene({triggerElement: "#trigger-four"});
+  var section__animation_four = new TimelineMax();
+  section__animation_four.from($('.four img'), 0.5, {autoAlpha: 0, scale: 0, ease: Power4.easeOut})
                       .staggerFrom($('.four h3'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut}, 0.25, 0);
-  scene.setTween(section__animation_c);
-  scene.addTo(controller);
-  //Trigger E
-  var scene = new $.ScrollMagic.Scene({triggerElement: "#trigger-e"});
-  var section__animation_e = new TimelineMax();
-  section__animation_e.staggerFrom($('.five img'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut}, 0.25);
-  scene.setTween(section__animation_e);
+  scene.setTween(section__animation_four);
   scene.addTo(controller);
   //Portal
   var scene = new $.ScrollMagic.Scene({triggerElement: "#portal"});
@@ -72,6 +66,13 @@
   section__animation_portal.from($('.portal h1'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut})
                            .staggerFrom($('.portal h3'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut}, 0.25, 0.25);
   scene.setTween(section__animation_portal);
+  scene.addTo(controller);
+  //Trigger 5
+  var scene = new $.ScrollMagic.Scene({triggerElement: "#trigger-five"});
+  var section__animation_five = new TimelineMax();
+  section__animation_five.from($('.five h1'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut})
+                         .staggerFrom($('.five img'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut}, 0.25, 0.25);
+  scene.setTween(section__animation_five);
   scene.addTo(controller);
   // Form submission
   $('form').submit(function() {
