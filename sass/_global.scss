@@ -182,12 +182,12 @@ main {
 section {
   text-align: center;
   article {
-    padding: 125px 0;
+    padding: 125px 0 150px;
     @include media('<480px') {
-      padding: 75px 0;
+      padding: 75px 0 100px;
     }
     @include media('<684px', 'landscape') {
-      padding: 75px 0;
+      padding: 75px 0 100px;
     }
     h1 {
       margin-bottom: 25px;
@@ -209,17 +209,7 @@ section {
 .two {
   @include cover-background('bsl@1x.jpg');
   article {
-    position: relative;
     background-color: rgba($white, 0.9);
-    img {
-      display: block;
-      margin: 0 auto;
-      position: absolute;;
-      top: 0%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-    }
   }
   h1 {
     color: $color1;
@@ -266,7 +256,7 @@ section {
 .four {
   @include cover-background('pills@1x.jpg');
   article {
-    padding: 125px 100px;
+    padding: 150px 100px 125px;
     @include media('<480px') {
       padding: 75px 5px;
     }
@@ -292,26 +282,11 @@ section {
   }
 }
 .five {
+  @include cover-background('doctor@1x.jpg');
   article {
-    padding: 125px 5px;
-    background-color: $color1;
+    background-color: rgba($color1, 0.9);
     @include media('<480px') {
-      padding: 75px 5px;
-    }
-  }
-  h1 {
-    color: $white;
-  }
-  h2 {
-    color: $white;
-  }
-}
-.six {
-  article {
-    padding: 125px 0 0 0;
-    background-color: rgba($color2, 0.95);
-    @include media('<480px') {
-      padding: 50px 0 0 0;
+      padding: 75px 0;
     }
   }
   h1 {
@@ -329,10 +304,8 @@ section {
   background: url(images/sos.png) repeat;
   h1 {
     color: $color1;
-    text-transform: uppercase;
-    letter-spacing: 6px;
   }
-  h2 {
+  h3 {
     color: $color1;
   }
 }
@@ -345,7 +318,10 @@ footer {
 }
 // Footer contact
 .contact__form {
-  padding: 50px 0 50px;
+  padding: 75px;
+  @include media('<480px') {
+    padding: 75px 0;
+  }
   background-color: rgba($color2, 0.95);
   h3 {
     margin-bottom: 25px;
@@ -515,7 +491,6 @@ input:-webkit-autofill {
 .terms-and-privacy {
   padding: 10px 0;
   display: block;
-  //border-bottom: 2px dotted $white;
   background-color: $color1;
   color: $white;
   text-align: center;
@@ -533,5 +508,8 @@ input:-webkit-autofill {
   p {
     font-size: ms(0);
     text-transform: uppercase;
+    span {
+      text-transform: none;
+    }
   }
 }

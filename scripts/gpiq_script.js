@@ -60,24 +60,17 @@
                       .staggerFrom($('.four h3'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut}, 0.25, 0);
   scene.setTween(section__animation_c);
   scene.addTo(controller);
-  //Trigger D
-  var scene = new $.ScrollMagic.Scene({triggerElement: "#trigger-d"});
-  var section__animation_d = new TimelineMax();
-  section__animation_d.from($('.five h1'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut})
-                      .staggerFrom($('.five h2'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut}, 0.25, 0.25);
-  scene.setTween(section__animation_d);
-  scene.addTo(controller);
   //Trigger E
   var scene = new $.ScrollMagic.Scene({triggerElement: "#trigger-e"});
   var section__animation_e = new TimelineMax();
-  section__animation_e.staggerFrom($('.six img'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut}, 0.25);
+  section__animation_e.staggerFrom($('.five img'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut}, 0.25);
   scene.setTween(section__animation_e);
   scene.addTo(controller);
   //Portal
   var scene = new $.ScrollMagic.Scene({triggerElement: "#portal"});
   var section__animation_portal = new TimelineMax();
   section__animation_portal.from($('.portal h1'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut})
-                           .staggerFrom($('.portal h2'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut}, 0.25, 0.25);
+                           .staggerFrom($('.portal h3'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut}, 0.25, 0.25);
   scene.setTween(section__animation_portal);
   scene.addTo(controller);
   // Form submission
