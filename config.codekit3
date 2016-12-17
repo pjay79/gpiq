@@ -7,7 +7,7 @@
 		"uuidString": "6251E847-27E0-4C0B-A739-5FDB170DA56A"
 		}
 	],
-"creatorBuild": "25444",
+"creatorBuild": "25479",
 "files": {
 	"\/bower.json": {
 		"ft": 524288,
@@ -4286,16 +4286,6 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/style-min.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 2,
-		"oAP": "\/style-min-min.css",
-		"oF": 0,
-		"oS": 0
-		},
 	"\/style.css": {
 		"aP": 0,
 		"bl": 0,
@@ -4759,6 +4749,10 @@
 			"active": 0,
 			"optionString": "{'properties': 'always'}"
 			},
+		"capitalized-comments": {
+			"active": 0,
+			"optionString": "'always', {'ignoreInlineComments': false, 'ignoreConsecutiveComments': false}"
+			},
 		"class-methods-use-this": {
 			"active": 0,
 			"optionString": "{'exceptMethods': []}"
@@ -4922,6 +4916,10 @@
 		"max-statements": {
 			"active": 0,
 			"optionString": "{'max': 10}, {'ignoreTopLevelFunctions': true}"
+			},
+		"max-statements-per-line": {
+			"active": 0,
+			"optionString": "{'max': 1}"
 			},
 		"multiline-ternary": {
 			"active": 0,
@@ -5287,6 +5285,10 @@
 			"active": 0,
 			"optionString": "'except-parens'"
 			},
+		"no-return-await": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-script-url": {
 			"active": 0,
 			"optionString": ""
@@ -5518,6 +5520,10 @@
 		"radix": {
 			"active": 0,
 			"optionString": "'always'"
+			},
+		"require-await": {
+			"active": 0,
+			"optionString": ""
 			},
 		"require-jsdoc": {
 			"active": 0,
@@ -6351,6 +6357,10 @@
 			},
 		"space-colon": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"support-ie8": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"toplevel": {
