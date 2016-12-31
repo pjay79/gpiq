@@ -5758,7 +5758,7 @@ section article h1 {
   background-color: #2D93E8;
   position: relative; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .three article .left {
     float: left;
     display: block;
@@ -5787,7 +5787,7 @@ section article h1 {
   background-color: #4C4C4C;
   position: relative; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .three article .right {
     float: left;
     display: block;
@@ -5833,7 +5833,8 @@ section article h1 {
   margin-right: 2.35765%;
   width: 100%;
   background-color: rgba(45, 147, 232, 0.9);
-  text-align: center; }
+  text-align: center;
+  padding: 100px 0; }
 
 .four article:last-child {
   margin-right: 0; }
@@ -5843,7 +5844,7 @@ section article h1 {
   display: block;
   margin-right: 2.35765%;
   width: 31.76157%;
-  height: 100vh;
+  height: 50vh;
   position: relative; }
 
 @media screen and (max-width: 992px) {
@@ -5867,15 +5868,15 @@ section article h1 {
 .four article .left2 .left__content {
   position: absolute;
   top: 50%;
-  right: 0;
-  transform: translateY(-50%); }
+  left: 50%;
+  transform: translate(-50%, -50%); }
 
 .four article .right2 {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 65.88078%;
-  height: 100vh;
+  height: 50vh;
   position: relative; }
 
 @media screen and (max-width: 992px) {
@@ -5895,9 +5896,6 @@ section article h1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
-
-.four article div * {
-  margin: 0; }
 
 .four article img {
   padding-bottom: 75px;

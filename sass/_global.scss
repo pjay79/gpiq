@@ -223,7 +223,6 @@ section {
 .three {
   @include outer-container(100%);
   article {
-    //height: 100%;
     padding: 0;
     background-color: $white;
     @include span-columns(12);
@@ -232,7 +231,7 @@ section {
       margin: 0 auto;
     }
     .left {
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 992px){
         @include span-columns(12 of 12);
       }
       @include span-columns(6 of 12);
@@ -249,7 +248,7 @@ section {
       }
     }
     .right {
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 992px){
         @include span-columns(12 of 12);
       }
       @include span-columns(6 of 12);
@@ -283,13 +282,13 @@ section {
       }
       @include span-columns(4 of 12);
       @include omega(1n);
-      height: 100vh;
+      height: 50vh;
       position: relative;
       .left__content {
         position: absolute;
         top: 50%;
-        right: 0;
-        transform: translateY(-50%);
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
     }
     .right2 {
@@ -297,7 +296,7 @@ section {
         @include span-columns(12 of 12);
       }
       @include span-columns(8 of 12);
-      height: 100vh;
+      height: 50vh;
       position: relative;
       .right__content {
         position: absolute;
@@ -308,9 +307,7 @@ section {
     }
     background-color: rgba($color1, 0.9);
     text-align: center;
-    div * {
-      margin: 0;
-    }
+    padding: 100px 0;
     img {
       padding-bottom: 75px;
       display: block;
@@ -341,6 +338,7 @@ section {
   article {
     background-color: rgba($color1, 0.9);
     .article__content {
+      //padding: 100px 0;
       width: 100%;
     }
   }
