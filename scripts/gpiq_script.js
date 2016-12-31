@@ -12,6 +12,10 @@ $(window).location.reload(true);
 // Set 100% viewport width/height to div's
 var fullscreen = function(){
   $('main').css({width: $(window).width(), height: $(window).height()});
+  $('.one').css({width: $(window).width(), height: $(window).height()});
+  $('.two').css({width: $(window).width(), height: $(window).height()});
+  $('.five').css({width: $(window).width(), height: $(window).height()});
+  $('.portal').css({width: $(window).width(), height: $(window).height()});
 };
 fullscreen();
 // Run the function again in case of window resize
