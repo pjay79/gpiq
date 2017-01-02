@@ -25,10 +25,10 @@ var fullscreen = function(){
   // Section 4
   $('.left2').css({height: $(window).height() * 0.5});
   $('.right2').css({height: $(window).height() * 0.5});
-  // Section 5
-  $('.five').css({width: $(window).width(), height: $(window).height()});
   // Portal
   $('.portal').css({width: $(window).width(), height: $(window).height()});
+  // Sponsors
+  $('.sponsors').css({width: $(window).width(), height: $(window).height()});
 };
 fullscreen();
 // Run the function again in case of window resize
@@ -51,49 +51,59 @@ main.play();
 });
 // ScrollMagic scenes
 var controller = new $.ScrollMagic.Controller();
+// Section swipes / pins
+var allPins = document.querySelectorAll(".pins");
+for (var i = 0; i < allPins.length; i++) {
+new $.ScrollMagic.Scene({
+		triggerElement: allPins[i],
+    triggerHook: "onLeave"
+	})
+	.setPin(allPins[i])
+	.addTo(controller);
+}
 // Trigger 1
 var scene1 = new $.ScrollMagic.Scene({triggerElement: "#trigger-one"});
-var section__animation_one = new TimelineMax();
-section__animation_one.from($('.one h1'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut})
-                      .staggerFrom($('.one p'), 1, {autoAlpha: 0, cycle:{x:[150,-150]}, ease: Power4.easeOut}, 0.25, 0.5);
-scene1.setTween(section__animation_one);
+var sectionOne = new TimelineMax();
+sectionOne.from($('.one h1'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut})
+          .staggerFrom($('.one p'), 1, {autoAlpha: 0, cycle:{x:[150,-150]}, ease: Power4.easeOut}, 0.25, 0.5);
+scene1.setTween(sectionOne);
 scene1.addTo(controller);
 // Trigger 2
 var scene2 = new $.ScrollMagic.Scene({triggerElement: "#trigger-two"});
-var section__animation_two = new TimelineMax();
-section__animation_two.from($('.two h1'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut})
-                      .staggerFrom($('.two p'), 1, {autoAlpha: 0, cycle:{x:[150,-150]}, ease: Power4.easeOut}, 0.25, 0.5);
-scene2.setTween(section__animation_two);
+var sectionTwo = new TimelineMax();
+sectionTwo.from($('.two h1'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut})
+          .staggerFrom($('.two p'), 1, {autoAlpha: 0, cycle:{x:[150,-150]}, ease: Power4.easeOut}, 0.25, 0.5);
+scene2.setTween(sectionTwo);
 scene2.addTo(controller);
 //Trigger 3
 var scene3 = new $.ScrollMagic.Scene({triggerElement: "#trigger-three"});
-var section__animation_three = new TimelineMax();
-section__animation_three.from($('.left h3'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut})
+var sectionThree = new TimelineMax();
+sectionThree.from($('.left h3'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut})
                         .from($('.left img'), 1, {autoAlpha: 0, scale: 0, ease: Power4.easeOut}, 0.25)
                         .from($('.right h3'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut}, 0.5)
                         .from($('.right img'), 1, {autoAlpha: 0, scale: 0, ease: Power4.easeOut}, 0.75 );
-scene3.setTween(section__animation_three);
+scene3.setTween(sectionThree);
 scene3.addTo(controller);
 //Trigger 4
 var scene4 = new $.ScrollMagic.Scene({triggerElement: "#trigger-four"});
-var section__animation_four = new TimelineMax();
-section__animation_four.from($('.four img'), 0.5, {autoAlpha: 0, scale: 0, ease: Power4.easeOut})
+var sectionFour = new TimelineMax();
+sectionFour.from($('.four img'), 0.5, {autoAlpha: 0, scale: 0, ease: Power4.easeOut})
                        .staggerFrom($('.four h3'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut}, 0.25, 0);
-scene4.setTween(section__animation_four);
+scene4.setTween(sectionFour);
 scene4.addTo(controller);
 //Portal
 var portal = new $.ScrollMagic.Scene({triggerElement: "#portal"});
-var section__animation_portal = new TimelineMax();
-section__animation_portal.from($('.portal h1'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut})
-                         .staggerFrom($('.portal h3'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut}, 0.25, 0.25);
-portal.setTween(section__animation_portal);
+var sectionPortal = new TimelineMax();
+sectionPortal.from($('.portal h1'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut})
+            .staggerFrom($('.portal h3'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut}, 0.25, 0.25);
+portal.setTween(sectionPortal);
 portal.addTo(controller);
 //Trigger 5
-var scene5 = new $.ScrollMagic.Scene({triggerElement: "#trigger-five"});
-var section__animation_five = new TimelineMax();
-section__animation_five.from($('.five h1'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut})
-                       .staggerFrom($('.five img'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut}, 0.25, 0.25);
-scene5.setTween(section__animation_five);
+var scene5 = new $.ScrollMagic.Scene({triggerElement: "#sponsors"});
+var sectionSponsors = new TimelineMax();
+sectionSponsors.from($('.sponsors h1'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut})
+               .staggerFrom($('.sponsors img'), 1, {autoAlpha: 0, y: "+=100px", ease: Power4.easeOut}, 0.25, 0.25);
+scene5.setTween(sectionSponsors);
 scene5.addTo(controller);
 // Form submission
 $('form').submit(function() {
