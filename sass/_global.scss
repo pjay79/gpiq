@@ -1,6 +1,6 @@
-* {
+/* {
 outline: 1px dotted #ff0000;
-}
+} */
 @font-face {
   font-family: 'GreycliffCF-Light';
   src: url('fonts/GreycliffCF-Light.eot');
@@ -185,8 +185,10 @@ section {
   article {
     width: 100%;
     height: 100%;
+    position: relative;
     .article__content {
       position: absolute;
+      width: 100%;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
@@ -223,45 +225,23 @@ section {
 .three {
   @include outer-container(100%);
   article {
-    padding: 0;
-    background-color: $white;
-    @include span-columns(12);
+    background-color: transparent;
     img {
       display: block;
       margin: 0 auto;
     }
     .left {
-      @media screen and (max-width: 992px){
-        @include span-columns(12 of 12);
-      }
-      @include span-columns(6 of 12);
-      @include omega();
-      width: 50%;
-      height: 100vh;
-      background-color: $color1;
       position: relative;
-      .left__content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+      background-color: $color1;
+      @media screen and (min-width: 992px) {
+        @include span-columns(6, block-collapse);
       }
     }
     .right {
-      @media screen and (max-width: 992px){
-        @include span-columns(12 of 12);
-      }
-      @include span-columns(6 of 12);
-      @include omega();
-      width: 50%;
-      height: 100vh;
-      background-color: $color2;
       position: relative;
-      .right__content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+      background-color: $color2;
+      @media screen and (min-width: 992px){
+        @include span-columns(6);
       }
     }
   }
@@ -275,41 +255,26 @@ section {
   @include outer-container(100%);
   @include cover-background('pills@1x.jpg');
   article {
-    @include span-columns(12);
-    .left2 {
-      @media screen and (max-width: 992px){
-        @include span-columns(12 of 12);
-      }
-      @include span-columns(4 of 12);
-      @include omega(1n);
-      height: 50vh;
-      position: relative;
-      .left__content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-    }
-    .right2 {
-      @media screen and (max-width: 992px){
-        @include span-columns(12 of 12);
-      }
-      @include span-columns(8 of 12);
-      height: 50vh;
-      position: relative;
-      .right__content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-    }
     background-color: rgba($color1, 0.9);
     text-align: center;
     padding: 100px 0;
+    @include media('<992px') {
+      padding: 50px 0;
+    }
+    @include span-columns(12);
+    .left2 {
+      position: relative;
+      @media screen and (min-width: 992px) {
+        @include span-columns(4, block-collapse);
+      }
+    }
+    .right2 {
+      position: relative;
+      @media screen and (min-width: 992px){
+        @include span-columns(8);
+      }
+    }
     img {
-      padding-bottom: 75px;
       display: block;
       margin: 0 auto;
     }
@@ -334,12 +299,24 @@ section {
   }
 }
 .five {
+  @include outer-container(100%);
   @include cover-background('doctor@1x.jpg');
   article {
     background-color: rgba($color1, 0.9);
-    .article__content {
-      //padding: 100px 0;
-      width: 100%;
+    .sponsor1 {
+      @media screen and (min-width: 992px) {
+        @include span-columns(4);
+      }
+    }
+    .sponsor2 {
+      @media screen and (min-width: 992px) {
+        @include span-columns(4);
+      }
+    }
+    .sponsor3 {
+      @media screen and (min-width: 992px) {
+        @include span-columns(4);
+      }
     }
   }
   h1 {
