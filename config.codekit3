@@ -3524,7 +3524,7 @@
 	"\/bower_components\/scrollmagic\/scrollmagic\/minified\/plugins\/debug.addIndicators.min.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/bower_components\/scrollmagic\/scrollmagic\/minified\/plugins\/debug.addIndicators.min.js",
 		"oF": 0,
 		"sC": 1,
@@ -4285,6 +4285,16 @@
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
+		},
+	"\/style-min.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/style-min-min.css",
+		"oF": 0,
+		"oS": 0
 		},
 	"\/style.css": {
 		"aP": 0,

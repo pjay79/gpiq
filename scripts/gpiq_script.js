@@ -5,6 +5,7 @@
 // @codekit-prepend "../bower_components/scrollmagic/scrollmagic/minified/ScrollMagic.min.js";
 // @codekit-prepend "../bower_components/scrollmagic/scrollmagic/minified/plugins/jquery.ScrollMagic.min.js";
 // @codekit-prepend "../bower_components/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js";
+// @codekit-prepend "../bower_components/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js";
 
 // Force scroll to top on refresh + force cache reload
 $(window).on('beforeunload', function(){
@@ -52,15 +53,26 @@ main.play();
 // ScrollMagic scenes
 var controller = new $.ScrollMagic.Controller();
 // Section swipes / pins
-var allPins = document.querySelectorAll(".pins");
+/*var allPins = document.querySelectorAll(".pins");
 for (var i = 0; i < allPins.length; i++) {
 new $.ScrollMagic.Scene({
-		triggerElement: allPins[i],
-    triggerHook: "onLeave"
+		triggerElement: allPins[i]
 	})
 	.setPin(allPins[i])
 	.addTo(controller);
-}
+} */
+var pin01 = new $.ScrollMagic.Scene({ triggerElement: "#trigger-one", triggerHook: "onLeave", duration: "30%"});
+pin01.setPin('.pin01')
+     .addIndicators()
+     .addTo(controller);
+var pin02 = new $.ScrollMagic.Scene({ triggerElement: "#trigger-two", triggerHook: "onLeave", duration: "30%"});
+pin02.setPin('.pin02')
+     .addIndicators()
+     .addTo(controller);
+var pin03 = new $.ScrollMagic.Scene({ triggerElement: "#trigger-three", triggerHook: "onLeave", duration: "30%"});
+pin03.setPin('.pin03')
+     .addIndicators()
+     .addTo(controller);
 // Trigger 1
 var scene1 = new $.ScrollMagic.Scene({triggerElement: "#trigger-one"});
 var sectionOne = new TimelineMax();
@@ -106,7 +118,7 @@ sectionSponsors.from($('.sponsors h1'), 1, {autoAlpha: 0, y: "+=100px", ease: Po
 scene5.setTween(sectionSponsors);
 scene5.addTo(controller);
 // Form submission
-$('form').submit(function() {
+$('form').submit(function(event) {
       var message__confirmation = new TimelineMax();
           message__confirmation.to($('#confirmation'), 1, {autoAlpha: 1, ease: Expo.easeOut})
                                .to($('#confirmation'), 1, {autoAlpha: 0, ease: Expo.easeOut, delay: 0.5});
